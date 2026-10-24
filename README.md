@@ -9,7 +9,7 @@ The extension runs only when the Chess.com page reports `observing` and the game
 1. Open `chrome://extensions` in Chrome.
 2. Turn on **Developer mode**.
 3. Choose **Load unpacked**.
-4. Select this folder: `live-eval-extension`.
+4. Select the cloned `LiveEval` repository folder, the one containing `manifest.json`.
 5. Click the ClipChess toolbar icon, paste the shared Chess.com game link (for example, `https://www.chess.com/game/<id>?username=<name>`), and choose **Open game + live monitor**. Chrome opens the game tab and a dedicated extension dashboard. The dashboard shows connection state, current FEN, PGN when the page exposes it, page API hints, and local engine status. If the page does not expose PGN, changing FEN confirms that the live position feed is updating.
 
 Use a separate spectator window for the recording. Do not share the evaluation with either player until the game is over. To record a short, capture the spectator page with OBS or another screen recorder and crop around the board and bar.
