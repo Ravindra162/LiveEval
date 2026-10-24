@@ -1,0 +1,7 @@
+*{box-sizing:border-box}body{margin:0;width:300px;background:#11130f;color:#f2f2e9;font:13px/1.5 Arial,sans-serif}main{padding:22px}.mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#bed19f;color:#182016;font-size:20px}.eyebrow{font:9px monospace;letter-spacing:.13em;color:#a8bd89;margin:18px 0 8px}h1{font-size:27px;line-height:1;margin:0 0 12px;letter-spacing:-.04em}h1 em{font-family:Georgia,serif;color:#bdd29d;font-weight:400}.copy{font-size:12px;color:#b4b9ad;line-height:1.65}.notice{margin:15px 0;padding:11px;border:1px solid #3d4935;border-radius:8px;background:#20251d;color:#c3d2ae;font-size:11px;line-height:1.5}button{width:100%;padding:11px;border:0;border-radius:8px;background:#bed19f;color:#192016;font-weight:700;cursor:pointer}small{display:block;color:#858b7d;font-size:10px;text-align:center;margin-top:12px}
+
+.field-label{display:block;margin:16px 0 6px;color:#a8bd89;font:9px monospace;letter-spacing:.12em}input{width:100%;padding:10px;border:1px solid #454a3f;border-radius:7px;background:#191b17;color:#f2f2e9;font:11px Arial,sans-serif;outline:none}input:focus{border-color:#bed19f}input::placeholder{color:#777d70}.error{margin:8px 0 0;color:#ffb4a9;font-size:11px}button{margin-top:12px}
+
+.connection{margin:12px 0;padding:9px;border-radius:7px;background:#20251d;color:#c3d2ae;font-size:11px;line-height:1.45}.connection.bad{background:#2b1d1b;color:#ffb4a9}.connection.wait{background:#24251f;color:#e5d59a}
+
+button.secondary{margin-top:8px;background:#30352b;color:#e6eadc;border:1px solid #4a5340}

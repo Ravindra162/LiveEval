@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "ClipChess Live Eval — Observer Only",
+  "version": "0.1.0",
+  "description": "Shows a read-only Stockfish evaluation bar on Chess.com spectator pages for educational recordings.",
+  "permissions": ["offscreen"],
+  "host_permissions": ["https://www.chess.com/*"],
+  "action": { "default_title": "ClipChess Live Eval", "default_popup": "popup.html" },
+  "background": { "service_worker": "service-worker.js", "type": "module" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.chess.com/game/*"],
+      "js": ["page-bridge.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://www.chess.com/game/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}

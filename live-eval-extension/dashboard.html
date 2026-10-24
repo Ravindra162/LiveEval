@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClipChess Live Monitor</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="mark">♟</span><span>CLIPCHESS <em>LIVE MONITOR</em></span></div><span id="connection-badge" class="badge wait">CONNECTING</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">OBSERVER SESSION</p><h1>Live game<br><em>signal check.</em></h1><p>This page follows the spectator tab and shows the move feed, position, and local engine status.</p></section>
+    <section class="status-grid">
+      <article class="panel"><span class="label">PAGE CONNECTION</span><strong id="page-status">Waiting for game tab…</strong><small id="last-update">No update received yet</small></article>
+      <article class="panel"><span class="label">CHESS.COM MODE</span><strong id="mode">—</strong><small id="result">Game result: —</small></article>
+      <article class="panel eval-panel"><div class="eval-heading"><span class="label">LOCAL EVALUATION</span><label class="pov-control">PLAYER POV<select id="pov-select" aria-label="Evaluation perspective"><option value="auto">Auto</option><option value="white">White</option><option value="black">Black</option></select></label></div><strong id="evaluation">—</strong><small id="depth">Waiting for a position</small><small id="pov-status">Auto · waiting for board orientation</small></article>
+    </section>
+    <section class="data-grid">
+      <article class="panel"><div class="panel-heading"><div><span class="label">LIVE PGN</span><h2>Move record</h2></div><span id="move-count" class="count">0 chars</span></div><pre id="pgn">Waiting for Chess.com move data…</pre></article>
+      <article class="panel"><div class="panel-heading"><div><span class="label">CURRENT POSITION</span><h2>FEN</h2></div><span id="turn" class="count">—</span></div><pre id="fen">Waiting for position…</pre><details><summary>Page move-data API</summary><pre id="api-hints">Not detected yet</pre></details></article>
+    </section>
+    <p class="footnote">Observer-only display. It shows no suggested moves or arrows. The browser page must remain open for updates.</p>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
